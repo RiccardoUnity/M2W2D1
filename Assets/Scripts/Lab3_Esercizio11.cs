@@ -6,29 +6,33 @@ public class Lab3_Esercizio11 : MonoBehaviour
 
     void Start()
     {
-        if (voto >= 0.4f && voto <= 10f)   //Delimito l'insieme possinbile di voti
+        if (voto >= 0f && voto <= 10f)   //Delimito l'insieme possinbile di voti
         {
-            if (voto < 5f)
+            if (voto <= 4f)
             {
                 Debug.Log("F");
             }
-            else if (voto < 6f)
+            else if (voto <= 5f)
             {
                 Debug.Log("E");
             }
-            else if (voto < 7.8f)
+            else if (voto <= 6f)
+            {
+                Debug.Log("D");
+            }
+            else if (voto <= 7f)
             {
                 Debug.Log("C");
             }
-            else if (voto < 9f)
+            else if (voto <= 8f)
             {
                 Debug.Log("B");
             }
-            else if (voto < 10f)
+            else if (voto <= 9f)
             {
                 Debug.Log("A");
             }
-            else if (voto == 10f)
+            else if (voto <= 10f)
             {
                 Debug.Log("A+");
             }
